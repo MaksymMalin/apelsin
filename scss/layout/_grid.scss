@@ -1,0 +1,43 @@
+/*grid settings*/
+$wrapper-margin: 10px;
+$column-margin: 30px;
+$colnumber: 13;
+$startcolnumber: 1;
+$containerwidth: 1280px;
+
+
+
+
+
+
+/*
+================================================================================
+|                              GRID                                  |
+================================================================================
+*/
+
+.container {
+  display: flex;
+  margin: auto;
+  padding:0 91px;
+  max-width: $containerwidth;
+  @include flex-wrap(nowrap);
+  @include flex-direction(column);
+}
+
+.grid-responsive {
+  display: flex;
+  @include flex-wrap(nowrap);
+  @include flex-direction(row);
+
+@for $startcolnumber from 1 through $colnumber {
+  .grid-responsive__column__col-#{$startcolnumber} {
+    @include flex(#{$startcolnumber} / #{$colnumber}) display: flex;
+    @include flex-direction(column);
+    width:100%;flex: #{$colnumber} #{ - ($startcolnumber - $colnumber)}  100%;
+    text-align: center;
+    @include flex-wrap(nowrap);
+  }
+}
+.grid-responsive__row{display:flex;flex:1 1 auto;}
+}

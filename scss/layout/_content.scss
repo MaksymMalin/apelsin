@@ -1,0 +1,201 @@
+/*mathematically can be expainedas regular x+y multimember expression*/
+/*
+================================================================================
+|                                     CONTENT                                 |
+================================================================================
+*/
+/*variables*/
+* {
+  box-sizing: border-box;
+}
+$background-main: rgb(255,255,255);
+$grey: rgb(95, 95, 95);
+
+body {
+  background: $background-main;
+}
+i[class*="fa"]::before{padding-right: 5px;font-family: "FontAwesome";color:#464646;font-style: normal;font-size: 29px;line-height: 30px;float:left;}
+i[class*="fa"]{font-size: 19px;
+font-family: Roboto-Light;
+line-height: 25px;
+font-weight: 100;
+color: #7e7e7e;
+float: left;
+text-align: left;
+padding-left: 0px;
+font-style: normal;}
+.menu {
+  display: inline-block;
+}
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  @include flex-direction(column);
+  @include flex-wrap(nowrap);
+  @include flex-direction(column)
+}
+
+nav > ul > li {
+  display: block;
+  float: left;
+}
+
+nav > ul {
+  float: right;
+}
+
+.ourvalues {
+  background: rgb(167, 210, 219);
+  &::after{display: block;width: 100px;height:100px;position: absolute;content: '';}
+}
+
+.table {
+  background: rgb(253, 253, 253) url('../img/plain.png') no-repeat center fixed;   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  .table_heading{margin:90px auto 0px auto;font-size:27px;
+  width:auto;font-family:'Roboto-Light';font-weight: 100;letter-spacing: 18px;text-transform: uppercase;color:$grey;
+display:table;
+&::after{
+  content:'|';color:inherit;display: block;width:100%;text-align: center;margin:23px 0;padding: 0 0 0 15px;font-size: 30px;font-weight: 100;font-style: normal;font-family: Roboto-Light;
+}
+}
+  .table_heading__title{
+    width:auto;font-family:'Roboto-Bold';font-weight: 400;letter-spacing: 1px;text-transform: uppercase;color:$grey;
+  display:table;font-size: 44px;margin:auto;
+&::after{
+
+  display: block;content: '';width: 0;
+height: 0;
+border-style: solid;
+border-width: 15px 15px 0 15px;margin:25px auto 140px auto;
+border-color: #a7d2db transparent transparent transparent;
+}
+
+
+}
+}
+.more {
+margin:100px auto;color:$grey;width:auto;background: #c4e5ec;border:none;padding:22px 52px;font-family: Roboto-Bold;
+&:hover{background:$grey;color:white;}
+}
+/*
+================================================================================
+|                                    TOP MENU                             |
+================================================================================
+*/
+.menu-list__first {
+  margin: 50px 0;
+  font-size: 10px;
+
+  .menu-item__lang a {
+    color: $link-color;
+  }
+
+  li {
+    a {
+      margin: 0 20px;
+      text-transform: uppercase;
+      font-family: Roboto-Bold;
+      color: rgb(95, 95, 95);
+
+      &:active,
+      &:focus,
+      &:hover {
+        color: $link-color;
+      }
+    }
+  }
+}
+
+.menu-list__second {
+  li {
+    &:last-child a {
+      border: none!important;
+    }
+
+    a {
+      float: left;
+      padding: 0 40px;
+      text-transform: uppercase;
+      font-family: Roboto;
+      font-size: 16px;
+      color: $grey;
+
+      &:active,
+      &:focus,
+      &:hover {
+        color: $link-color;
+      }
+      border-right: 2px solid rgb(218,218,218);
+      display: block;
+      width: auto;
+      height: auto;
+    }
+  }
+}
+/*
+================================================================================
+|                                   flights                          |
+================================================================================
+*/
+.flights{
+margin-bottom: 120px;
+.flight-text{
+  .flight-text_info{
+    line-height: 30px;
+  }
+}
+.flights-header {
+margin: 130px 0 73px;font-size:74px;color:$grey;font-weight:900;width:100%;text-align: center;
+}
+
+
+}
+.pretext{
+text-align:left; font-family: "Roboto";color:rgb(85,85,85);line-height: 30px;
+a{float:right;text-decoration: underline;}
+}
+.article {margin:130px auto;}
+.value-article__text{
+  padding: 20px 30px;
+  margin: auto;
+  -webkit-writing-mode: horizontal-tb;
+  -ms-writing-mode: lr-tb;
+  writing-mode: horizontal-tb;
+  text-align: left;
+font-size: 13px;
+}
+.value-number{
+  -ms-writing-mode: sideways-lr;
+  writing-mode:sideways-lr;
+  -webkit-writing-mode: sideways-lr;
+  color:rgb(255,255,255);
+  position:absolute;
+  &::before{content:' ______';margin-top:10px;}
+}
+
+.value-heading{font-size: 14px;font-family: Roboto-Bold;font-weight: 900;position: absolute;
+margin-left: 30px;
+}
+
+/*
+================================================================================
+|                                 table                         |
+================================================================================
+*/
+.grid-responsive__cell {
+width:100%;text-align: left;padding:34px 0px 0px 36px;font-size: 11px;font-family: Roboto;color:$grey;font-weight:900;
+  h5{font-size: 14px;}
+border-right: 1px solid $grey;}
+.table [class*="grid-responsive__column"]{margin-top: 50px;}
+
+.grid-responsive__row__heading{
+border-bottom: 1px solid grey;
+border-right: 1px solid grey;
+.grid-responsive__cell{
+  border-right: none;padding:34px 0 50px 40px;
+}
+}

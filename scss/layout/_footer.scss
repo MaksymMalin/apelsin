@@ -1,0 +1,26 @@
+
+/*
+================================================================================
+|                                     FOOTER                                   |
+================================================================================
+*/
+
+
+
+$footer-color: rgb(28, 28, 28);
+
+
+footer{
+	background:$footer-color;
+
+.table{
+	background: none;
+width: 100%;
+
+}
+}
+.after{
+	color:#7e7e7e;font-weight: bold;font-family: Roboto-Bold;text-align: left;line-height: 30px;
+	a{color:#7e7e7e;}
+}
+.copyright{font-family:Roboto-Light;color:#2e2e2e;margin:170px 0  48px 0}
