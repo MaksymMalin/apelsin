@@ -83,8 +83,8 @@ form {
 
 a {
 	color: $link-color;
-
-	text-decoration: none;
+text-decoration: none;
+&:hover{text-decoration: underline;}
 	outline: none;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
